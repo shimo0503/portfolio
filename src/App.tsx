@@ -1,5 +1,12 @@
+import Header from './components/Header';
+
 const App = () => {
-  return <h1>hello world</h1>;
+  return (
+    <div>
+      <Header />
+      <h1>Shimoyama Shoki</h1>
+    </div>
+  );
 };
 
 export default App;
