@@ -1,0 +1,22 @@
+const Aboutme = () => {
+  return (
+    <section id="aboutme" className="mt-20 px-4">
+      <h2 className="text-5xl font-bold text-center mb-16">About me</h2>
+
+      <div className="max-w-5xl mx-auto flex flex-col md:flex-row items-center gap-10">
+        <div className="w-40 h-40 bg-gray-300 rounded-full shrink-0" />
+
+        <div className="text-left">
+          <div className="text-2xl font-bold mb-2">下山捷揮</div>
+          <div className="mb-2">横浜国立大学理工学部 数物・電子情報系学科 情報工学EP3年</div>
+          <p className="mt-2 leading-relaxed">
+            Web系企業への就職を目指す大学3年生です。得意分野はバックエンドで、LaravelやDjangoでの開発ができます。フロントエンドの開発経験もあります。
+            パスロジ株式会社の長期インターンシップに2024年6月から参加しており、ソフトウェア開発のほか、インターンチームのマネジメントも勤めています。
+          </p>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default Aboutme;

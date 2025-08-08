@@ -1,10 +1,11 @@
+import Aboutme from './components/Aboutme';
 import Header from './components/Header';
 
 const App = () => {
   return (
     <div>
       <Header />
-      <h1>Shimoyama Shoki</h1>
+      <Aboutme />
     </div>
   );
 };
