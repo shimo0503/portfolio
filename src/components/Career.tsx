@@ -23,7 +23,7 @@ const careers = [
     date: '2024年8月',
     title: '注文アプリの制作',
     description:
-      '個人開発で、注文アプリをDjangoを用いて制作しました。1か月半くらいで完成しましたが、課題が多く残る結果となりました。',
+      '個人開発で、注文アプリをDjangoを用いて制作しました。1か月半くらいで完成しましたが、UI面などで課題が多く残る結果となりました。',
   },
   {
     date: '2025年3月',
@@ -37,7 +37,13 @@ const careers = [
     description: (
       <div>
         パスロジ株式会社のインターンシップにて、インターン生主導で開発を行っていたWordpress用プラグイン「4Login-for-Secure-and-Smart-Access」が仮リリースされました。プレスリリース記事は
-        <a href="https://prtimes.jp/main/html/rd/p/000000046.000001103.html">こちら</a>です。
+        <a
+          className="text-blue-600"
+          href="https://prtimes.jp/main/html/rd/p/000000046.000001103.html"
+        >
+          こちら
+        </a>
+        です。
       </div>
     ),
   },
