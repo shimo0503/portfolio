@@ -20,6 +20,18 @@ const Header = () => {
           <a href="#project">Project</a>
         </nav>
       </header>
+      {openMenu ? (
+        <div className="absolute z-10 top-0 right-0  min-h-fit min-w-full">
+          <div className="basis-1/2"></div>
+
+          <nav className="flex flex-col basis-1/2 bg-white">
+            <a href="#aboutme">About Me</a>
+            <a href="#career">Career</a>
+            <a href="#skills">Skills</a>
+            <a href="#project">Project</a>
+          </nav>
+        </div>
+      ) : undefined}
     </div>
   );
 };

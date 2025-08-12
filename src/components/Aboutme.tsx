@@ -4,7 +4,11 @@ const Aboutme = () => {
       <h2 className="text-5xl font-bold text-center mb-16">About me</h2>
 
       <div className="max-w-5xl mx-auto flex flex-col md:flex-row items-center gap-10">
-        <div className="w-40 h-40 bg-gray-300 rounded-full shrink-0" />
+        <img
+          src="/src/assets/face.jpg"
+          alt="profile"
+          className="w-40 h-40 rounded-full object-cover shrink-0"
+        />
 
         <div className="text-left">
           <div className="text-2xl font-bold mb-2">下山捷揮</div>
