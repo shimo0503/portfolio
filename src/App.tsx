@@ -1,4 +1,5 @@
 import Aboutme from './components/Aboutme';
+import Career from './components/Career';
 import Header from './components/Header';
 
 const App = () => {
@@ -6,6 +7,7 @@ const App = () => {
     <div>
       <Header />
       <Aboutme />
+      <Career />
     </div>
   );
 };
