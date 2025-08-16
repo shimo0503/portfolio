@@ -1,12 +1,12 @@
 import type { SimpleIcon } from 'simple-icons';
 
-type SkillItemProps = {
+type IconItemProps = {
   icon: SimpleIcon;
   color: string;
   title: string;
 };
 
-const SkillItem = (props: SkillItemProps) => {
+const IconItem = (props: IconItemProps) => {
   const icon = props.icon;
   const color = props.color;
   const title = props.title;
@@ -26,4 +26,4 @@ const SkillItem = (props: SkillItemProps) => {
   );
 };
 
-export default SkillItem;
+export default IconItem;

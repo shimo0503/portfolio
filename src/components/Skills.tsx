@@ -5,6 +5,7 @@ import {
   siDocker,
   siFlask,
   siGit,
+  siGithubactions,
   siHtml5,
   siJavascript,
   siLaravel,
@@ -62,6 +63,7 @@ const Skills = () => {
               { icon: siNginx, color: '#009639', title: 'Nginx' },
               { icon: siUbuntu, color: '#E95420', title: 'Ubuntu' },
               { icon: siMysql, color: '#4479A1', title: 'MySQL' },
+              { icon: siGithubactions, color: '#2088FF', title: 'Github Actions' },
             ]}
           />
         </div>

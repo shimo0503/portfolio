@@ -1,3 +1,6 @@
+import { siGithub } from 'simple-icons';
+import IconItem from './IconItem';
+
 const Aboutme = () => {
   return (
     <section id="aboutme" className="mt-20 px-4">
@@ -19,6 +22,9 @@ const Aboutme = () => {
           </p>
         </div>
       </div>
+      <a href="https://github.com/shimo0503">
+        <IconItem icon={siGithub} color="#181717" title="Github" />
+      </a>
     </section>
   );
 };

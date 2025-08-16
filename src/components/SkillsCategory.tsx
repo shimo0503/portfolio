@@ -1,7 +1,7 @@
 import type { SimpleIcon } from 'simple-icons';
-import SkillItem from './SkillItem';
+import IconItem from './IconItem';
 
-type SkillItem = {
+type IconItem = {
   icon: SimpleIcon;
   color: string;
   title: string;
@@ -9,7 +9,7 @@ type SkillItem = {
 
 type SkillCategoryProps = {
   category: string;
-  skills: SkillItem[];
+  skills: IconItem[];
 };
 
 const SkillsCategory = ({ category, skills }: SkillCategoryProps) => {
@@ -18,7 +18,7 @@ const SkillsCategory = ({ category, skills }: SkillCategoryProps) => {
       <h3 className="text-4xl text-center">{category}</h3>
       <div className="flex flex-wrap gap-6 mt-4">
         {skills.map(({ icon, color, title }) => (
-          <SkillItem icon={icon} color={`${color}`} title={title} />
+          <IconItem icon={icon} color={`${color}`} title={title} />
         ))}
       </div>
     </div>
