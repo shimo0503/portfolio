@@ -8,7 +8,7 @@ const Header = () => {
   };
   return (
     <div>
-      <header className="bg-slate-400 flex gap-5">
+      <header className="bg-[#9ad4fbff] flex gap-5">
         <button type="button" onClick={handleOpenMenu} className="z-10 space-y-2 ml-3 my-3">
           <Menu />
         </button>
