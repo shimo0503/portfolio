@@ -1,37 +1,49 @@
-import { Menu } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 import { useState } from 'react';
 
 const Header = () => {
   const [openMenu, setOpenMenu] = useState(false);
-  const handleOpenMenu = () => {
-    setOpenMenu(!openMenu);
-  };
+  const toggleMenu = () => setOpenMenu(!openMenu);
+
   return (
     <div>
-      <header className="bg-[#9ad4fbff] flex gap-5">
-        <button type="button" onClick={handleOpenMenu} className="z-10 space-y-2 ml-3 my-3">
+      <header className="bg-[#9ad4fbff] flex gap-5 items-center relative z-20 p-3">
+        <button type="button" onClick={toggleMenu} className="space-y-2">
           <Menu />
         </button>
-        <h1 className="text-2xl font-bold italic my-3">Shimoyama Shoki</h1>
-        <nav className="mt-4 text-gray-800 flex gap-4 ml-auto mr-6">
+        <h1 className="text-2xl font-bold italic ml-3">Shimoyama Shoki</h1>
+        <nav className="hidden md:flex gap-4 ml-auto text-gray-800">
           <a href="#aboutme">About Me</a>
           <a href="#career">Career</a>
           <a href="#skills">Skills</a>
-          <a href="#project">Project</a>
+          <a href="#information">Information</a>
         </nav>
       </header>
-      {openMenu ? (
-        <div className="absolute z-10 top-0 right-0  min-h-fit min-w-full">
-          <div className="basis-1/2"></div>
 
-          <nav className="flex flex-col basis-1/2 bg-white">
-            <a href="#aboutme">About Me</a>
-            <a href="#career">Career</a>
-            <a href="#skills">Skills</a>
-            <a href="#project">Project</a>
+      {openMenu && (
+        <div className="fixed inset-0 bg-black/50 z-30 flex justify-end" onClick={toggleMenu}>
+          <nav
+            className="w-64 bg-white h-full p-6 flex flex-col gap-6"
+            onClick={e => e.stopPropagation()}
+          >
+            <button onClick={toggleMenu} className="self-end">
+              <X />
+            </button>
+            <a href="#aboutme" className="text-lg" onClick={toggleMenu}>
+              About Me
+            </a>
+            <a href="#career" className="text-lg" onClick={toggleMenu}>
+              Career
+            </a>
+            <a href="#skills" className="text-lg" onClick={toggleMenu}>
+              Skills
+            </a>
+            <a href="#information" className="text-lg" onClick={toggleMenu}>
+              Information
+            </a>
           </nav>
         </div>
-      ) : undefined}
+      )}
     </div>
   );
 };
