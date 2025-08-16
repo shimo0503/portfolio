@@ -22,7 +22,7 @@ import SkillsCategory from './SkillsCategory';
 
 const Skills = () => {
   return (
-    <section id="career" className="mt-20 px-4">
+    <section id="skills" className="mt-20 px-4">
       <h2 className="text-5xl font-bold text-center mb-16">Skills</h2>
       <div className="flex flex-col gap-6 md:flex-row md:gap-8">
         <div className="flex-1">
