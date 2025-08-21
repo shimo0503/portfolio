@@ -11,7 +11,7 @@
     "format": "prettier --write \"src/**/*.{js,jsx,ts,tsx,css,md}\"",
     "preview": "vite preview",
     "rebuild": "vite build && rm -R docs && cp -r dist docs",
-    "git": "git add . && git commit -m 'deploy' && git push origin main"
+    "git": "git add . && git commit -m deploy && git push origin main"
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.1.11",
