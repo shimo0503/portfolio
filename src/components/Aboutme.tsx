@@ -1,4 +1,5 @@
 import { siGithub } from 'simple-icons';
+import faceImage from '../assets/face.jpg';
 import IconItem from './IconItem';
 
 const Aboutme = () => {
@@ -8,7 +9,7 @@ const Aboutme = () => {
 
       <div className="max-w-5xl mx-auto flex flex-col md:flex-row items-center gap-10">
         <img
-          src="/src/assets/face.jpg"
+          src={faceImage}
           alt="profile"
           className="w-40 h-40 rounded-full object-cover shrink-0"
         />
@@ -17,7 +18,8 @@ const Aboutme = () => {
           <div className="text-2xl font-bold mb-2">下山捷揮</div>
           <div className="mb-2">横浜国立大学理工学部 数物・電子情報系学科 情報工学EP3年</div>
           <p className="mt-2 leading-relaxed">
-            Web系企業への就職を目指す大学3年生です。得意分野はバックエンドで、LaravelやDjangoでの開発ができます。フロントエンドの開発経験もあります。
+            Web系企業への就職を目指す大学3年生です。LaravelやDjangoを用いたバックエンド開発や、React,
+            Next.jsを用いたフロントエンドの開発経験もあります。得意分野はバックエンドです。
             パスロジ株式会社の長期インターンシップに2024年6月から参加しており、ソフトウェア開発のほか、インターンチームのマネジメントも勤めています。
           </p>
         </div>
