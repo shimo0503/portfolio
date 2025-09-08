@@ -18,6 +18,8 @@ const ProductItemsData: ProductItemProps[] = [
     title: 'ポートフォリオ',
     img_path: 'portfolio_screen.png',
     description: '本サイトです。',
+    githubUrl: 'https://github.com/shimo0503/portfolio',
+    productUrl: 'https://shimo0503.github.io/portfolio/',
     skills: [
       { icon: siReact, color: '#61DAFB', title: 'React' },
       { icon: siTailwindcss, color: '#06B6D4', title: 'Tailwind CSS' },
@@ -31,6 +33,8 @@ const ProductItemsData: ProductItemProps[] = [
     img_path: 'instant_order_screen.png',
     description:
       '知人の出店で使うために注文アプリを開発しました。何度か改良を加え、少しずつ技術スタックが変わっているのですが、現在デプロイされているものの技術スタックは以下の通りです。現在はログイン機能実装や、バックエンドのLaravelへの移行などの作業を行っています。',
+    githubUrl: 'https://github.com/shimo0503/orderapp_for_react',
+    productUrl: 'https://instant-order.duckdns.org/',
     skills: [
       { icon: siDjango, color: '#092E20', title: 'Django' },
       { icon: siNextdotjs, color: '#000000', title: 'Next.js' },
@@ -45,12 +49,14 @@ const Products = () => {
   return (
     <section id="products" className="mt-20 px-4">
       <h2 className="text-5xl font-bold text-center mb-16">Products</h2>
-      {ProductItemsData.map(({ title, img_path, description, skills }) => (
+      {ProductItemsData.map(({ title, img_path, description, githubUrl, productUrl, skills }) => (
         <ProductItem
           key={title}
           title={title}
           img_path={img_path}
           description={description}
+          githubUrl={githubUrl}
+          productUrl={productUrl}
           skills={skills}
         />
       ))}
