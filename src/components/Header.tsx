@@ -38,8 +38,8 @@ const Header = () => {
             <a href="#skills" className="text-lg" onClick={toggleMenu}>
               Skills
             </a>
-            <a href="#information" className="text-lg" onClick={toggleMenu}>
-              Information
+            <a href="#products" className="text-lg" onClick={toggleMenu}>
+              Products
             </a>
           </nav>
         </div>

@@ -1,69 +1,26 @@
-# React + TypeScript + Vite
+# Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 使用技術
 
-Currently, two official plugins are available:
+### 言語・フレームワークなど
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- React ver.19.1.0
+- TailwindCSS ver.4.1.11
+- Vite ver. 7.0.4
 
-## Expanding the ESLint configuration
+### コードフォーマッタなど
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- Prettier ver.3.6.2
+- ESLint ver.9.32.0
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+### デプロイ
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+- 静的サイトなので、GitHub Pagesを用いて[こちら](https://shimo0503.github.io/portfolio/)にデプロイ
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## 工夫したところ
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+- コンポーネント分割
+  - ある程度同じ範囲のDOMとJavaScriptをコンポーネントとしてまとめることができることがReactの魅力なので、`App.tsx`に書くことは最低限にし、各セクションごとにコンポーネントを分割した。また、セクションのコンポーネントの中でも、部品に分けることができるものはできるだけコンポーネントに切り出すことで、再利用性や保守性を高めた。
+- UI
+  - 画像や図、配色などを工夫することで、よりユーザが見やすくなるようなデザインを心掛けた。
+  - 自分のスキルについては、字で書いてあってもわかりづらいと感じたので、各技術の画像を羅列している。

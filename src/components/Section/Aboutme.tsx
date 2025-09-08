@@ -1,5 +1,5 @@
 import { siGithub } from 'simple-icons';
-import IconItem from './IconItem';
+import IconItem from '../IconItem';
 
 const Aboutme = () => {
   return (

@@ -19,7 +19,7 @@ import {
   siTypescript,
   siUbuntu,
 } from 'simple-icons';
-import SkillsCategory from './SkillsCategory';
+import SkillsCategory from '../SkillsCategory';
 
 const Skills = () => {
   return (

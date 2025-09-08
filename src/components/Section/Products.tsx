@@ -10,8 +10,8 @@ import {
   siTailwindcss,
   siVite,
 } from 'simple-icons';
-import type { ProductItemProps } from './ProductItem';
-import ProductItem from './ProductItem';
+import type { ProductItemProps } from '../ProductItem';
+import ProductItem from '../ProductItem';
 
 const ProductItemsData: ProductItemProps[] = [
   {
