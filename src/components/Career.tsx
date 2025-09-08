@@ -36,7 +36,7 @@ const careers = [
     title: '長期インターンシップで開発していたものが仮リリース',
     description: (
       <div>
-        パスロジ株式会社のインターンシップにて、インターン生主導で開発を行っていたWordpress用プラグイン「4Login-for-Secure-and-Smart-Access」が仮リリースされました。プレスリリース記事は
+        パスロジ株式会社のインターンシップにて、インターン生主導で開発を行っていたプロダクトが仮リリースされました。プレスリリース記事は
         <a
           className="text-blue-600"
           href="https://prtimes.jp/main/html/rd/p/000000046.000001103.html"

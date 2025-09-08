@@ -1,7 +1,7 @@
 import type { SimpleIcon } from 'simple-icons';
 import IconItem from './IconItem';
 
-type IconItem = {
+export type IconItem = {
   icon: SimpleIcon;
   color: string;
   title: string;
